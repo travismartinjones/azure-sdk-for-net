@@ -138,6 +138,11 @@ terms are still indexed too, with bigrams overlaid. This token filter
 is implemented using Apache Lucene.
 <a href="http://lucene.apache.org/core/4_10_3/analyzers-common/org/apache/lucene/analysis/commongrams/CommonGramsFilter.html">http://lucene.apache.org/core/4_10_3/analyzers-common/org/apache/lucene/analysis/commongrams/CommonGramsFilter.html</a></p>
 </section>
+      <h4><a class="xref" href="Microsoft.Azure.Search.Models.ConditionalSkill.html">ConditionalSkill</a></h4>
+      <section><p>A skill that enables scenarios that require a Boolean operation to
+determine the data to assign to an output.
+<a href="https://docs.microsoft.com/azure/search/cognitive-search-skill-conditional">https://docs.microsoft.com/azure/search/cognitive-search-skill-conditional</a></p>
+</section>
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.CorsOptions.html">CorsOptions</a></h4>
       <section><p>Defines options to control Cross-Origin Resource Sharing (CORS) for an
 index.
@@ -300,6 +305,8 @@ index.</p>
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.IndexerExecutionResult.html">IndexerExecutionResult</a></h4>
       <section><p>Represents the result of an individual indexer execution.</p>
 </section>
+      <h4><a class="xref" href="Microsoft.Azure.Search.Models.IndexerLimits.html">IndexerLimits</a></h4>
+      <section></section>
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.IndexerListResult.html">IndexerListResult</a></h4>
       <section><p>Response from a List Indexers request. If successful, it includes the
 full definitions of all indexers.</p>
@@ -638,6 +645,10 @@ matching a given list of tags.
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.TagScoringParameters.html">TagScoringParameters</a></h4>
       <section><p>Provides parameter values to a tag scoring function.</p>
 </section>
+      <h4><a class="xref" href="Microsoft.Azure.Search.Models.TextTranslationSkill.html">TextTranslationSkill</a></h4>
+      <section><p>A skill to translate text from one language to another.
+<a href="https://docs.microsoft.com/azure/search/cognitive-search-skill-text-translation">https://docs.microsoft.com/azure/search/cognitive-search-skill-text-translation</a></p>
+</section>
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.TextWeights.html">TextWeights</a></h4>
       <section><p>Defines weights on index fields for which matches should boost scoring
 in search queries.</p>
@@ -672,12 +683,10 @@ filter is implemented using Apache Lucene.
       <section><p>A single bucket of a simple or interval facet query result that reports the number of documents with a field
 falling within a particular interval or having a specific value.</p>
 </section>
-      <h4><a class="xref" href="Microsoft.Azure.Search.Models.WebApiHttpHeaders.html">WebApiHttpHeaders</a></h4>
-      <section></section>
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.WebApiSkill.html">WebApiSkill</a></h4>
       <section><p>A skill that can call a Web API endpoint, allowing you to extend a
 skillset by having it call your custom code.
-<a href="https://docs.microsoft.com/azure/search/cognitive-search-custom-skill-interface">https://docs.microsoft.com/azure/search/cognitive-search-custom-skill-interface</a></p>
+<a href="https://docs.microsoft.com/azure/search/cognitive-search-custom-skill-web-api">https://docs.microsoft.com/azure/search/cognitive-search-custom-skill-web-api</a></p>
 </section>
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.WordDelimiterTokenFilter.html">WordDelimiterTokenFilter</a></h4>
       <section><p>Splits words into subwords and performs optional transformations on
@@ -704,31 +713,13 @@ subword groups. This token filter is implemented using Apache Lucene.
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.DataType.html">DataType</a></h4>
       <section><p>Defines the data type of a field in an Azure Search index.</p>
 </section>
-      <h4><a class="xref" href="Microsoft.Azure.Search.Models.EntityRecognitionSkillLanguage.html">EntityRecognitionSkillLanguage</a></h4>
-      <section><p>Defines the format of EntityRecognitionSkill supported language codes.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.Search.Models.ImageAnalysisSkillLanguage.html">ImageAnalysisSkillLanguage</a></h4>
-      <section><p>Defines the format of ImageAnalysisSkill supported language codes.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.Search.Models.KeyPhraseExtractionSkillLanguage.html">KeyPhraseExtractionSkillLanguage</a></h4>
-      <section><p>Defines the format of KeyPhraseExtractionSkill supported language codes.</p>
-</section>
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.NamedEntityRecognitionSkillLanguage.html">NamedEntityRecognitionSkillLanguage</a></h4>
       <section><p>Defines the format of NamedEntityRecognitionSkill supported language codes.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.Search.Models.OcrSkillLanguage.html">OcrSkillLanguage</a></h4>
-      <section><p>Defines the format of OcrSkill supported language codes.</p>
 </section>
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.RegexFlags.html">RegexFlags</a></h4>
       <section><p>Defines flags that can be combined to control how regular expressions are used in the pattern analyzer and
 pattern tokenizer.
 <a href="http://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html#field_summary">http://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html#field_summary</a></p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.Search.Models.SentimentSkillLanguage.html">SentimentSkillLanguage</a></h4>
-      <section><p>Defines the format of SentimentSkill supported language codes.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.Search.Models.SplitSkillLanguage.html">SplitSkillLanguage</a></h4>
-      <section><p>Defines the format of SplitSkill supported language codes.</p>
 </section>
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.TokenFilterName.html">TokenFilterName</a></h4>
       <section><p>Defines the names of all token filters supported by Azure Search.
@@ -757,8 +748,14 @@ pattern tokenizer.
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.EntityCategory.html">EntityCategory</a></h4>
       <section><p>Defines values for EntityCategory.</p>
 </section>
+      <h4><a class="xref" href="Microsoft.Azure.Search.Models.EntityRecognitionSkillLanguage.html">EntityRecognitionSkillLanguage</a></h4>
+      <section><p>Defines values for EntityRecognitionSkillLanguage.</p>
+</section>
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.FacetType.html">FacetType</a></h4>
       <section><p>Specifies the type of a facet query result.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.Search.Models.ImageAnalysisSkillLanguage.html">ImageAnalysisSkillLanguage</a></h4>
+      <section><p>Defines values for ImageAnalysisSkillLanguage.</p>
 </section>
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.ImageDetail.html">ImageDetail</a></h4>
       <section><p>Defines values for ImageDetail.</p>
@@ -772,6 +769,9 @@ pattern tokenizer.
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.IndexerStatus.html">IndexerStatus</a></h4>
       <section><p>Defines values for IndexerStatus.</p>
 </section>
+      <h4><a class="xref" href="Microsoft.Azure.Search.Models.KeyPhraseExtractionSkillLanguage.html">KeyPhraseExtractionSkillLanguage</a></h4>
+      <section><p>Defines values for KeyPhraseExtractionSkillLanguage.</p>
+</section>
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.MicrosoftStemmingTokenizerLanguage.html">MicrosoftStemmingTokenizerLanguage</a></h4>
       <section><p>Defines values for MicrosoftStemmingTokenizerLanguage.</p>
 </section>
@@ -780,6 +780,9 @@ pattern tokenizer.
 </section>
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.NamedEntityCategory.html">NamedEntityCategory</a></h4>
       <section><p>Defines values for NamedEntityCategory. This is deprecated, use <a class="xref" href="Microsoft.Azure.Search.Models.EntityCategory.html">EntityCategory</a> instead</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.Search.Models.OcrSkillLanguage.html">OcrSkillLanguage</a></h4>
+      <section><p>Defines values for OcrSkillLanguage.</p>
 </section>
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.PhoneticEncoder.html">PhoneticEncoder</a></h4>
       <section><p>Defines values for PhoneticEncoder.</p>
@@ -796,8 +799,14 @@ pattern tokenizer.
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.SearchMode.html">SearchMode</a></h4>
       <section><p>Defines values for SearchMode.</p>
 </section>
+      <h4><a class="xref" href="Microsoft.Azure.Search.Models.SentimentSkillLanguage.html">SentimentSkillLanguage</a></h4>
+      <section><p>Defines values for SentimentSkillLanguage.</p>
+</section>
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.SnowballTokenFilterLanguage.html">SnowballTokenFilterLanguage</a></h4>
       <section><p>Defines values for SnowballTokenFilterLanguage.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.Search.Models.SplitSkillLanguage.html">SplitSkillLanguage</a></h4>
+      <section><p>Defines values for SplitSkillLanguage.</p>
 </section>
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.StemmerTokenFilterLanguage.html">StemmerTokenFilterLanguage</a></h4>
       <section><p>Defines values for StemmerTokenFilterLanguage.</p>
@@ -810,6 +819,9 @@ pattern tokenizer.
 </section>
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.TextSplitMode.html">TextSplitMode</a></h4>
       <section><p>Defines values for TextSplitMode.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.Search.Models.TextTranslationSkillLanguage.html">TextTranslationSkillLanguage</a></h4>
+      <section><p>Defines values for TextTranslationSkillLanguage.</p>
 </section>
       <h4><a class="xref" href="Microsoft.Azure.Search.Models.TokenCharacterKind.html">TokenCharacterKind</a></h4>
       <section><p>Defines values for TokenCharacterKind.</p>

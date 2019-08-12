@@ -78,7 +78,7 @@ zero or more <a class="xref" href="Azure.Page-1.html">Page&lt;T&gt;</a>s of valu
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Azure.html">Azure</a></h6>
-  <h6><strong>Assembly</strong>: Azure.Storage.Common.dll</h6>
+  <h6><strong>Assembly</strong>: Azure.Core.dll</h6>
   <h5 id="Azure_Page_1_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public struct Page&lt;T&gt;</code></pre>
@@ -103,19 +103,19 @@ zero or more <a class="xref" href="Azure.Page-1.html">Page&lt;T&gt;</a>s of valu
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Azure_Page_1__ctor__0___System_String_Response_.md&amp;value=---%0Auid%3A%20Azure.Page%601.%23ctor(%600%5B%5D%2CSystem.String%2CResponse)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Page_1__ctor_IReadOnlyList__0__System_String_Azure_Response_.md&amp;value=---%0Auid%3A%20Azure.Page%601.%23ctor(IReadOnlyList%7B%600%7D%2CSystem.String%2CAzure.Response)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/storage/Azure.Storage.Common/src/AsyncCollection.cs/#L165">View Source</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Page.cs/#L51">View Source</a>
   </span>
   <a id="Azure_Page_1__ctor_" data-uid="Azure.Page`1.#ctor*"></a>
-  <h4 id="Azure_Page_1__ctor__0___System_String_Response_" data-uid="Azure.Page`1.#ctor(`0[],System.String,Response)">Page(T[], String, Response)</h4>
+  <h4 id="Azure_Page_1__ctor_IReadOnlyList__0__System_String_Azure_Response_" data-uid="Azure.Page`1.#ctor(IReadOnlyList{`0},System.String,Azure.Response)">Page(IReadOnlyList&lt;T&gt;, String, Response)</h4>
   <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="Azure.Page-1.html">Page&lt;T&gt;</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Page(T[] values, string continuationToken, Response response)</code></pre>
+    <pre><code class="lang-csharp hljs">public Page(IReadOnlyList&lt;T&gt; values, string continuationToken, Response response)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -128,7 +128,7 @@ zero or more <a class="xref" href="Azure.Page-1.html">Page&lt;T&gt;</a>s of valu
     </thead>
     <tbody>
       <tr>
-        <td>T[]</td>
+        <td><span class="xref">IReadOnlyList</span>&lt;T&gt;</td>
         <td><span class="parametername">values</span></td>
         <td><p>The values in this <a class="xref" href="Azure.Page-1.html">Page&lt;T&gt;</a>.</p>
 </td>
@@ -140,9 +140,9 @@ zero or more <a class="xref" href="Azure.Page-1.html">Page&lt;T&gt;</a>s of valu
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Response</span></td>
+        <td><a class="xref" href="Azure.Response.html">Response</a></td>
         <td><span class="parametername">response</span></td>
-        <td><p>The <see cref="!:Response"></see> that provided this <a class="xref" href="Azure.Page-1.html">Page&lt;T&gt;</a>.</p>
+        <td><p>The <a class="xref" href="Azure.Response.html">Response</a> that provided this <a class="xref" href="Azure.Page-1.html">Page&lt;T&gt;</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -151,10 +151,10 @@ zero or more <a class="xref" href="Azure.Page-1.html">Page&lt;T&gt;</a>s of valu
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Azure_Page_1_ContinuationToken.md&amp;value=---%0Auid%3A%20Azure.Page%601.ContinuationToken%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Page_1_ContinuationToken.md&amp;value=---%0Auid%3A%20Azure.Page%601.ContinuationToken%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/storage/Azure.Storage.Common/src/AsyncCollection.cs/#L140">View Source</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Page.cs/#L26">View Source</a>
   </span>
   <a id="Azure_Page_1_ContinuationToken_" data-uid="Azure.Page`1.ContinuationToken*"></a>
   <h4 id="Azure_Page_1_ContinuationToken" data-uid="Azure.Page`1.ContinuationToken">ContinuationToken</h4>
@@ -184,10 +184,10 @@ empty when there are no more pages.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Azure_Page_1_Values.md&amp;value=---%0Auid%3A%20Azure.Page%601.Values%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Page_1_Values.md&amp;value=---%0Auid%3A%20Azure.Page%601.Values%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/storage/Azure.Storage.Common/src/AsyncCollection.cs/#L131">View Source</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Page.cs/#L19">View Source</a>
   </span>
   <a id="Azure_Page_1_Values_" data-uid="Azure.Page`1.Values*"></a>
   <h4 id="Azure_Page_1_Values" data-uid="Azure.Page`1.Values">Values</h4>
@@ -196,7 +196,7 @@ empty when there are no more pages.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T[] Values { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;T&gt; Values { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -208,7 +208,7 @@ empty when there are no more pages.</p>
     </thead>
     <tbody>
       <tr>
-        <td>T[]</td>
+        <td><span class="xref">IReadOnlyList</span>&lt;T&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -217,10 +217,10 @@ empty when there are no more pages.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Azure_Page_1_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Azure.Page%601.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Page_1_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Azure.Page%601.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/storage/Azure.Storage.Common/src/AsyncCollection.cs/#L186">View Source</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Page.cs/#L72">View Source</a>
   </span>
   <a id="Azure_Page_1_Equals_" data-uid="Azure.Page`1.Equals*"></a>
   <h4 id="Azure_Page_1_Equals_System_Object_" data-uid="Azure.Page`1.Equals(System.Object)">Equals(Object)</h4>
@@ -267,10 +267,10 @@ empty when there are no more pages.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Azure_Page_1_GetHashCode.md&amp;value=---%0Auid%3A%20Azure.Page%601.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Page_1_GetHashCode.md&amp;value=---%0Auid%3A%20Azure.Page%601.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/storage/Azure.Storage.Common/src/AsyncCollection.cs/#L193">View Source</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Page.cs/#L79">View Source</a>
   </span>
   <a id="Azure_Page_1_GetHashCode_" data-uid="Azure.Page`1.GetHashCode*"></a>
   <h4 id="Azure_Page_1_GetHashCode" data-uid="Azure.Page`1.GetHashCode">GetHashCode()</h4>
@@ -299,14 +299,14 @@ empty when there are no more pages.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Azure_Page_1_GetRawResponse.md&amp;value=---%0Auid%3A%20Azure.Page%601.GetRawResponse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Page_1_GetRawResponse.md&amp;value=---%0Auid%3A%20Azure.Page%601.GetRawResponse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/storage/Azure.Storage.Common/src/AsyncCollection.cs/#L151">View Source</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Page.cs/#L37">View Source</a>
   </span>
   <a id="Azure_Page_1_GetRawResponse_" data-uid="Azure.Page`1.GetRawResponse*"></a>
   <h4 id="Azure_Page_1_GetRawResponse" data-uid="Azure.Page`1.GetRawResponse">GetRawResponse()</h4>
-  <div class="markdown level1 summary"><p>Gets the <see cref="!:Response"></see> that provided this
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Azure.Response.html">Response</a> that provided this
 <a class="xref" href="Azure.Page-1.html">Page&lt;T&gt;</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -324,17 +324,17 @@ empty when there are no more pages.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span></td>
+        <td><a class="xref" href="Azure.Response.html">Response</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Azure_Page_1_ToString.md&amp;value=---%0Auid%3A%20Azure.Page%601.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Page_1_ToString.md&amp;value=---%0Auid%3A%20Azure.Page%601.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/storage/Azure.Storage.Common/src/AsyncCollection.cs/#L178">View Source</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Page.cs/#L64">View Source</a>
   </span>
   <a id="Azure_Page_1_ToString_" data-uid="Azure.Page`1.ToString*"></a>
   <h4 id="Azure_Page_1_ToString" data-uid="Azure.Page`1.ToString">ToString()</h4>
@@ -369,10 +369,10 @@ empty when there are no more pages.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Azure_Page_1.md&amp;value=---%0Auid%3A%20Azure.Page%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Page_1.md&amp;value=---%0Auid%3A%20Azure.Page%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/storage/Azure.Storage.Common/src/AsyncCollection.cs/#L119" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Page.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

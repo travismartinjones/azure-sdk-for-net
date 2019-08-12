@@ -115,6 +115,14 @@ tasks for the job on it, and by default delete the pool once the job has complet
       <h4><a class="xref" href="Microsoft.Azure.Batch.AutoUserSpecification.html">AutoUserSpecification</a></h4>
       <section><p>Specifies the parameters for the auto user that runs a task on the Batch service</p>
 </section>
+      <h4><a class="xref" href="Microsoft.Azure.Batch.AzureBlobFileSystemConfiguration.html">AzureBlobFileSystemConfiguration</a></h4>
+      <section><p>Information used to connect to an Azure Storage Container using Blobfuse.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.Batch.AzureFileShareConfiguration.html">AzureFileShareConfiguration</a></h4>
+      <section><p>Information used to connect to an Azure Fileshare.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.Batch.AzureStorageAuthenticationKey.html">AzureStorageAuthenticationKey</a></h4>
+      <section></section>
       <h4><a class="xref" href="Microsoft.Azure.Batch.BatchClient.html">BatchClient</a></h4>
       <section><p>A client for an Azure Batch account, used to access the Batch service.</p>
 </section>
@@ -147,6 +155,9 @@ tasks for the job on it, and by default delete the pool once the job has complet
 </section>
       <h4><a class="xref" href="Microsoft.Azure.Batch.CertificateReference.html">CertificateReference</a></h4>
       <section><p>Represents a certificate object of the Azure Batch service.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.Batch.CifsMountConfiguration.html">CifsMountConfiguration</a></h4>
+      <section><p>Information used to connect to a CIFS file system.</p>
 </section>
       <h4><a class="xref" href="Microsoft.Azure.Batch.ClientRequestIdProvider.html">ClientRequestIdProvider</a></h4>
       <section><p>Interceptor which contains a function used to generate a client request id to set as <a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.IOptions.html#Microsoft_Azure_Batch_Protocol_Models_IOptions_ClientRequestId">ClientRequestId</a>.
@@ -295,6 +306,9 @@ node.</p>
       <section><p>A name-value pair associated with a Batch service resource. The Batch service does not assign any meaning to this
 metadata; it is solely for the use of user code.</p>
 </section>
+      <h4><a class="xref" href="Microsoft.Azure.Batch.MountConfiguration.html">MountConfiguration</a></h4>
+      <section><p>The file system to mount on each node.</p>
+</section>
       <h4><a class="xref" href="Microsoft.Azure.Batch.MultiInstanceSettings.html">MultiInstanceSettings</a></h4>
       <section><p>Settings which specify how to run a multi-instance task. Multi-instance tasks are commonly used to support MPI tasks.
 In the MPI case, if any of the subtasks fail (for example due to exiting with a non-zero exit code) the entire multi-instance
@@ -309,6 +323,9 @@ task fails. The multi-instance task is then terminated and retried, up to its re
 </section>
       <h4><a class="xref" href="Microsoft.Azure.Batch.NetworkSecurityGroupRule.html">NetworkSecurityGroupRule</a></h4>
       <section><p>A network security group rule to apply to an inbound endpoint.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.Batch.NfsMountConfiguration.html">NfsMountConfiguration</a></h4>
+      <section><p>Information used to connect to an NFS file system.</p>
 </section>
       <h4><a class="xref" href="Microsoft.Azure.Batch.NodeAgentInformation.html">NodeAgentInformation</a></h4>
       <section><p>Information about the node agent</p>

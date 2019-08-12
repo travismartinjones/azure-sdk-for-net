@@ -85,11 +85,21 @@ parameters.  You can construct a new instance using
 <p>For more information, <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas">https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas</a>.</p>
 </section>
       <h4><a class="xref" href="Azure.Storage.Sas.SasQueryParameters.html">SasQueryParameters</a></h4>
-      <section></section>
+      <section><p>A <a class="xref" href="Azure.Storage.Sas.SasQueryParameters.html">SasQueryParameters</a> object represents the components
+that make up an Azure Storage Shared Access Signature's query
+parameters.  It includes components used by all Azure Storage resources
+(Containers, Blobs, Files, and Queues).  You can construct a new instance
+using the service specific SAS builder types.</p>
+<p>For more information, <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas">https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas</a>.</p>
+</section>
     <h3 id="structs">Structs
   </h3>
       <h4><a class="xref" href="Azure.Storage.Sas.AccountSasBuilder.html">AccountSasBuilder</a></h4>
-      <section></section>
+      <section><p><a class="xref" href="Azure.Storage.Sas.AccountSasBuilder.html">AccountSasBuilder</a> is used to generate an account level
+Shared Access Signature (SAS) for Azure Storage services.
+For more information, see
+<a href="https://docs.microsoft.com/rest/api/storageservices/constructing-an-account-sas">https://docs.microsoft.com/rest/api/storageservices/constructing-an-account-sas</a>.</p>
+</section>
       <h4><a class="xref" href="Azure.Storage.Sas.AccountSasPermissions.html">AccountSasPermissions</a></h4>
       <section><p>Specifies the permissions available to an account level shared access
 signature.  Use <a class="xref" href="Azure.Storage.Sas.AccountSasPermissions.html#Azure_Storage_Sas_AccountSasPermissions_ToString">ToString()</a> to produce a <see cref="!:String"></see>
@@ -148,14 +158,21 @@ to generate a permissions string you can provide to
 Access Signature.</p>
 </section>
       <h4><a class="xref" href="Azure.Storage.Sas.QueueAccountSasPermissions.html">QueueAccountSasPermissions</a></h4>
-      <section></section>
+      <section><p><a class="xref" href="Azure.Storage.Sas.QueueAccountSasPermissions.html">QueueAccountSasPermissions</a> supports reading and writing
+permissions string for a queue account's access policy.  Use
+<a class="xref" href="Azure.Storage.Sas.QueueAccountSasPermissions.html#Azure_Storage_Sas_QueueAccountSasPermissions_ToString">ToString()</a> to generate a permissions string you can provide
+to <a class="xref" href="Azure.Storage.Sas.QueueSasBuilder.html#Azure_Storage_Sas_QueueSasBuilder_Permissions">Permissions</a>.</p>
+</section>
       <h4><a class="xref" href="Azure.Storage.Sas.QueueSasBuilder.html">QueueSasBuilder</a></h4>
       <section><p><a class="xref" href="Azure.Storage.Sas.QueueSasBuilder.html">QueueSasBuilder</a> is used to generate a Shared Access
 Signature (SAS) for an Azure Storage queue.
 For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas">https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas</a>.</p>
 </section>
       <h4><a class="xref" href="Azure.Storage.Sas.QueueSasPermissions.html">QueueSasPermissions</a></h4>
-      <section></section>
+      <section><p><a class="xref" href="Azure.Storage.Sas.QueueSasPermissions.html">QueueSasPermissions</a> supports reading and writing
+permissions string for a queue's access policy.  Use <a class="xref" href="Azure.Storage.Sas.QueueSasPermissions.html#Azure_Storage_Sas_QueueSasPermissions_ToString">ToString()</a>
+to generate a permissions string you can provide to</p>
+</section>
       <h4><a class="xref" href="Azure.Storage.Sas.SasProtocol.html">SasProtocol</a></h4>
       <section><p>Defines the protocols permitted for Storage requests made with a shared
 access signature.</p>

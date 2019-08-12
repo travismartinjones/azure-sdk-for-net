@@ -95,46 +95,48 @@
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Creating">Creating</td>
         <td><p>The Batch service has obtained the underlying virtual machine from
-Azure Compute, but it has not yet started to join the pool.</p>
+Azure Compute, but it has not yet started to join the Pool.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Idle">Idle</td>
-        <td><p>The node is not currently running a task.</p>
+        <td><p>The Compute Node is not currently running a Task.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_LeavingPool">LeavingPool</td>
-        <td><p>The node is leaving the pool, either because the user explicitly
-removed it or because the pool is resizing or autoscaling down.</p>
+        <td><p>The Compute Node is leaving the Pool, either because the user
+explicitly removed it or because the Pool is resizing or
+autoscaling down.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Offline">Offline</td>
-        <td><p>The node is not currently running a task, and scheduling of new
-tasks to the node is disabled.</p>
+        <td><p>The Compute Node is not currently running a Task, and scheduling of
+new Tasks to the Compute Node is disabled.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Preempted">Preempted</td>
-        <td><p>The low-priority node has been preempted. Tasks which were running
-on the node when it was preempted will be rescheduled when another
-node becomes available.</p>
+        <td><p>The low-priority Compute Node has been preempted. Tasks which were
+running on the Compute Node when it was preempted will be
+rescheduled when another Compute Node becomes available.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Rebooting">Rebooting</td>
-        <td><p>The node is rebooting.</p>
+        <td><p>The Compute Node is rebooting.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Reimaging">Reimaging</td>
-        <td><p>The node is reimaging.</p>
+        <td><p>The Compute Node is reimaging.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Running">Running</td>
-        <td><p>The node is running one or more tasks (other than a start task).</p>
+        <td><p>The Compute Node is running one or more Tasks (other than a
+StartTask).</p>
 </td>
       </tr>
       <tr>
@@ -144,26 +146,26 @@ node becomes available.</p>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_StartTaskFailed">StartTaskFailed</td>
-        <td><p>The start task has failed on the compute node (and exhausted all
-retries), and waitForSuccess is set. The node is not usable for
-running tasks.</p>
+        <td><p>The StartTask has failed on the Compute Node (and exhausted all
+retries), and waitForSuccess is set. The Compute Node is not usable
+for running Tasks.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Unknown">Unknown</td>
-        <td><p>The Batch service has lost contact with the node, and does not know
-its true state.</p>
+        <td><p>The Batch service has lost contact with the Compute Node, and does
+not know its true state.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Unusable">Unusable</td>
-        <td><p>The node cannot be used for task execution due to errors.</p>
+        <td><p>The Compute Node cannot be used for Task execution due to errors.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_WaitingForStartTask">WaitingForStartTask</td>
-        <td><p>The start task has started running on the compute node, but
-waitForSuccess is set and the start task has not yet completed.</p>
+        <td><p>The StartTask has started running on the Compute Node, but
+waitForSuccess is set and the StartTask has not yet completed.</p>
 </td>
       </tr>
     </tbody>
@@ -176,10 +178,10 @@ waitForSuccess is set and the start task has not yet completed.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ComputeNodeState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ComputeNodeState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ComputeNodeState.cs/#L21" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ComputeNodeState.cs/#L21" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
