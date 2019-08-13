@@ -79,6 +79,7 @@ namespace Microsoft.Azure.ServiceBus.Amqp
             }
             catch (Exception exception)
             {
+                System.Diagnostics.Debug.WriteLine(exception.Message);
                 MessagingEventSource.Log.AmqpLinkCreationException(
                     this.entityPath,
                     session,
