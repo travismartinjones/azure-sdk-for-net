@@ -77,8 +77,9 @@
 <p>Before working on a contribution, it would be beneficial to familiarize yourself with the process and guidelines used for the Azure SDKs so that your submission is consistent with the project standards and is ready to be accepted with fewer changes requested.  In particular, it is recommended to review:</p>
 <ul>
 <li><a href="https://github.com/Azure/azure-sdk">Azure SDK README</a>, to learn more about the overall project and processes used.</li>
-<li><a href="https://azuresdkspecs.z5.web.core.windows.net/DesignGuidelines.html#general-documentation">Azure SDK Design Guidelines</a>, to understand the general guidelines for the Azure SDK across all languages and platforms.</li>
-<li><a href="https://azuresdkspecs.z5.web.core.windows.net/DotNetSpec.html">Azure SDK Design Guidelines for .NET</a>, to understand the guidelines specific to the Azure SDK for .NET.</li>
+<li><a href="https://github.com/Azure/azure-sdk-for-net/blob/master/CONTRIBUTING.md">Azure SDK Contributing Guide</a>, for information about how to onboard and contribute to the overall Azure SDK ecosystem.</li>
+<li><a href="https://azure.github.io/azure-sdk/general_introduction.html">Azure SDK Design Guidelines</a>, to understand the general guidelines for the Azure SDK across all languages and platforms.</li>
+<li><a href="https://azure.github.io/azure-sdk/dotnet_introduction.html">Azure SDK Design Guidelines for .NET</a>, to understand the guidelines specific to the Azure SDK for .NET.</li>
 </ul>
 <h2 id="development-environment-setup">Development environment setup</h2>
 <h3 id="running-tests">Running tests</h3>
@@ -87,13 +88,10 @@
 <ul>
 <li><p><strong>Unit tests</strong> have no special considerations; these are self-contained and execute locally without any reliance on external resources.  Unit tests are considered the default test type in the Event Hubs client library and, thus, have no explicit category trait attached to them.</p>
 </li>
-<li><p><strong>Integration tests</strong> have dependencies on live Azure resources and require setting up your development environment prior to running.  Known in the Azure SDK project commonly as &quot;Live&quot; tests, these tests are decorated with a category trait of &quot;Live&quot;.  Specifically, an Azure resource group, Event Hubs namespace, and Azure Service Principal with &quot;contributor&quot; rights to the Event Hub namespace is required.  The Live tests read information from the following environment variables:</p>
+<li><p><strong>Integration tests</strong> have dependencies on live Azure resources and require setting up your development environment prior to running.  Known in the Azure SDK project commonly as &quot;Live&quot; tests, these tests are decorated with a category trait of &quot;Live&quot;.  Specifically, an Azure resource group and Azure Service Principal with &quot;contributor&quot; rights to that resource group is required.  For each test run, the Live tests will use the service principal to dynamically create an Event Hubs namespace within the resource group and remove it once the test run is complete.</p>
 </li>
 </ul>
-<p><code>EVENT_HUBS_CONNECTION_STRING</code><br>
-The full connection string to the Event Hubs namespace, using the default shared access policy.</p>
-<p><code>EVENT_HUBS_NAMESPACE</code><br>
-The host name of the Event Hubs namespace, without the protocol or domain found in the connection string.</p>
+<p>The Live tests read information from the following environment variables:</p>
 <p><code>EVENT_HUBS_RESOURCEGROUP</code><br>
 The name of the Azure resource group that contains the Event Hubs namespace</p>
 <p><code>EVENT_HUBS_SUBSCRIPTION</code><br>
